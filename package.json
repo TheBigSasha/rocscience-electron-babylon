@@ -1,0 +1,78 @@
+{
+  "name": "rocscience-electron-babylon",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-adeps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@babylonjs/core": "^4.2.0",
+    "@babylonjs/loaders": "^4.2.0",
+    "@lottiefiles/lottie-interactivity": "^0.1.4",
+    "axios": "^0.21.1",
+    "babylonjs-loaders": "^4.2.0",
+    "chart.js": "^2.9.4",
+    "core-js": "^3.9.1",
+    "datejs": "^1.0.0-rc3",
+    "jquery": "^3.6.0",
+    "prismjs": "^1.23.0",
+    "vue": "^2.6.12",
+    "vue-analytics": "^5.22.1",
+    "vue-babylonjs": "*",
+    "vue-chartjs": "^3.5.1",
+    "vue-gtag": "^1.14.0",
+    "vue-parallaxy": "^1.1.1",
+    "vue-router": "^3.2.0",
+    "vue-tippy": "^4.10.0",
+    "vuetify": "^2.4.8",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.3",
+    "@vue/cli-plugin-babel": "^4.5.12",
+    "@vue/cli-plugin-eslint": "^4.5.12",
+    "@vue/cli-plugin-router": "^4.5.12",
+    "@vue/cli-plugin-vuex": "^4.5.12",
+    "@vue/cli-service": "^4.5.12",
+    "babel-eslint": "^10.1.0",
+    "babylonjs": "^4.2.0",
+    "electron": "^11.0.0",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.1.1",
+    "style-resources-loader": "^1.4.1",
+    "vue-cli-plugin-electron-builder": "*",
+    "vue-cli-plugin-vuetify": "~2.3.1",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
